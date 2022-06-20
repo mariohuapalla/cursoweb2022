@@ -1,0 +1,88 @@
+/* importar letras de Google: cuando importas las letras de 
+Google siempre se pone al inicio del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&family=Quintessential&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap');
+
+body{
+    background-color:bisque;
+}
+.contenedor{
+    background-color:white;
+    margin:auto;
+}
+
+/* Llamamos a las letras descargadas de Google */
+.fuente1{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.fuente2{
+    font-family: 'Quintessential', cursive;
+}
+
+/* agregando estilos al parrafo */
+.fuente3{
+    font-style: italic;
+}
+.fuente4{
+    font-style: oblique;
+}
+.fuente5{
+    font-style: normal;
+}
+.fuente6{
+    font-weight: bold;
+}
+.fuente7{
+    font-weight: bolder;
+}
+.fuente8{
+    font-style: small;
+}
+.fuente9{
+    font-variant: small-caps;
+}
+.fuente10{
+    font-size: 25px;
+}
+.fuente11{
+    font-variant: normal;
+}
+
+/* utilizamos las fuentes descargadas */
+@font-face {
+    font-family: "OdibeeSans";
+    src: url("/fonts/OdibeeSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Quintessential";
+    src: url("/fonts/Quintessential-Regular.ttf");
+}
+@font-face {
+    font-family: "Batman";
+    src: url("/fonts/BATMAN.ttf");
+}
+@font-face {
+    font-family: "Transformer";
+    src: url("/fonts/TransformersMovie.ttf");
+}
+@font-face {
+    font-family: "Japon";
+    src: url("/fonts/Japanese.ttf");
+}
+/* utilizando las fuentes de internet */
+.fuente12{
+    font-family: "OdibeeSans";
+}
+.fuente13{
+    font-family: "Quintessential";
+}
+.fuente14{
+    font-family: "Batman";
+}
+.fuente15{
+    font-family: "Transformer";
+}
+.fuente16{
+    font-family: 'Japon';
+}

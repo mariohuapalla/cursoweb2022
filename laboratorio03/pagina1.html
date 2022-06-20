@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 1</title>
+    <!-- Cuando queremos agregar Javascript a nuestras paginas web podemos utilziar la etiqueta <script></script> la cual esta etiqueta se tiene que agregar dentro del <head></head> -->
+
+    <script type="text/javascript">
+        // La etiqueta script para poder especificar el tipo de script que se agregara es importante agregarle el type="text/javascript", dentro de esta etiqueta se interpreta el lenguaje de programacion Javascript, donde cada linea de codigo de Javascript(JS) se cierra con (;)
+        // Javascript como lenguaje de programacion permite realizar operaciones aritmeticas, funciones como cualquier otro lenguaje de programacion, con la unica diferenciaque va a necesitar de HTML para poder ejecutarse
+        // Para poder mejorar el proceso de aprendizaje de programacion, debemos de tener en cuenta lo siguiente: 
+        // escribir
+        // variable
+        // lectura de datos
+        // operaciones 
+        // estructuras logicas
+        // arreglos
+
+        // 1.- Escritura de datos
+        // Permite mostrar informacion en la pagina web, para poder realizar esto utilizamos la sentencia alert o el document.write
+
+        // Sintaxis alert
+        // alert("mensaje");
+
+        //mostrar un mensaje con una bienvenida al curso
+        alert("Bienvenidos al curso de Javascript");
+
+        //mostrar un mensaje con los dias de la semana
+        alert("lunes");
+        alert("martes");
+        alert("miercoles");
+        alert("jueves");
+        alert("viernes");
+        alert("sabado");
+        alert("domingo");
+
+        //muestra un mensaje con las estaciones del año
+        alert("verano");
+        alert("otoño");
+        alert("invierno");
+        alert("primavera");
+
+        //sintaxis ocument.write
+        //document.write("mensaje");
+
+        //mostrar un mensaje con una bienvenida al curso
+        document.write("Bienvenidos al curso de Javascript<br>");
+
+        //mostrar un mensaje con los dias de la semana
+        document.write("lunes<br>");
+        document.write("martes<br>");
+        document.write("miercoles<br>");
+        document.write("jueves<br>");
+        document.write("viernes<br>");
+        document.write("sabado<br>");
+        document.write("domingo<br>");
+
+        //muestra un mensaje con las estaciones del año
+        document.write("verano<br>");
+        document.write("otoño<br>");
+        document.write("invierno<br>");
+        document.write("primavera<br>");
+
+    // Variables
+    // Una variable te permite almacenar un valor en la memoria RAM, el cual puede cambiar durante la ejecucion del programa. 
+    // Tipo de Variables
+    // Entero -> 5, 4, -7 -> 0
+    // Real -> 5.25, 6.19, -7.89 -> 0
+    // Texto  -> "hola",'hola' -> "" o ''
+    // Logico -> false, true -> false
+
+    // Sintaxis para declarar una variable
+    // var nombre_variable=valor_inicial;
+
+    // Identificar la cantidad de variables con las cuales se va a trabajar
+    // Ejemplo 1: Desarrollar una aplicacion que permita calcular la suma de dos numeros
+    // ¿Cuantas variables necesito?
+    // numero1, numero2, suma
+    //var numero1;
+    //var numero2;
+    //var suma;
+    //cuando declaramos variables --> 2,3 a 4 letras como maximo
+    //var n1;
+    //var n2;
+    //var sum;
+    //para el mismo ejemplo
+    //var x;
+    //var y;
+    //var z;
+
+    //Los pasos necarios para poder resolver el ejercicio serian los siguientes: 
+    //declarando variables
+    //inicializar las variables
+    //valor a las variables
+    //realizar operaciones
+    //mostrar resultados
+
+    // Ejemplo 1: Desarrollar una aplicacion que permita calcular la suma de dos numeros, si se sabe que los numeros son 5 y 7
+    //¿cuantas variables necesito?
+    //3
+    //¿que tipo de datos necesito?
+    //entero
+    //¿como se llamarian las variables?
+    //num1,num2,sum
+    //¿cual seria la operacion? 
+    //sum=n1+n2;
+
+    //declarando variables
+    var num1;
+    var num2;
+    var sum;
+    //inicializar las variables
+    num1=0;
+    num2=0;
+    sum=0;
+    //valor a las variables
+    num1=5;
+    num2=7;
+    //realizar operaciones
+    sum=num1+num2;
+    //mostrar resultados
+    alert("La suma es: "+sum);
+    document.write("La suma es: "+sum+"<br>");
+
+    //Ejemplo 2: Desarrollar una aplicacion que permita calcular el promedio de 4 notas, si se sabe que el valor de las notas es 14, 17 13 y 19
+    //¿cuantas variables necesito?
+    //5
+    //¿que tipo de datos necesito?
+    //real
+    //¿como se llamarian las variables?
+    //n1, n2, n3, n4, prom
+    //¿cual seria la operacion? 
+    //prom=(n1+n2+n3+n4)/4
+
+    //declarando variables
+    var n1; 
+    var n2; 
+    var n3; 
+    var n4;
+    var prom;
+    //inicializamos las variables
+    n1=0;
+    n2=0; 
+    n3=0;
+    n4=0;
+    prom=0;
+    //valor de variables
+    n1=14;
+    n2=17;
+    n3=13;
+    n4=19;
+    //realizar operaciones
+    prom=(n1+n2+n3+n4)/4;
+    //mostrando resultados
+    alert("El promedio final es: "+prom);
+    document.write("El promedio final es: "+prom+"<br>");
+
+    /*Desarrollar una aplicacion que permita calcular el sueldo //final de un trabjador si se sabe que gana 1000 soles y demas se calcula una bonificacion del 7% y un descuento del 5%. Mostrar todos los resultados -->*/
+    //¿cuantas variables necesito?
+    //4
+    //¿que tipo de datos necesito?
+    //real
+    //¿como se llamarian las variables?
+    //sb, bon, des, sf
+    //¿cual seria la operacion? 
+    //bon=sb*0.07;
+    //des=sb*0.05;
+    //sf=sb+bon-des;
+
+    //definiendo variables
+    var sb, bon, des, sf;
+    //inicializando variables
+    sb=0; bon=0; des=0; sf=0;
+    //asignando valores
+    sb=1000;
+    //realizando operaciones
+    bon=sb*0.07;
+    des=sb*0.05;
+    sf=sb+bon-des;
+    //mostrando resultados
+    alert("El sueldo basico es: "+sb);
+    alert("La bonificacion es: "+bon);
+    alert("El descuento es: "+des);
+    alert("El sueldo final es: "+sf);
+    document.write("El sueldo basico es: "+sb+"<br>");
+    document.write("La bonificacion es: "+bon+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("El sueldo final es: "+sf+"<br>");
+
+    /*Desarrollar una aplicacion que permita calcular el total a pagar por la compra de un producto, si se sabe que la cantidad a comprar es de 10 y el precio del producto es 125.80 y ademas se debe de calcular el IGV que es el 18% del subtotal. El total sera subtotal mas IGV. Mostrar todos los resultados*/
+    //¿cuantas variables necesito?
+    //5
+    //¿que tipo de datos necesito?
+    //real
+    //¿como se llamarian las variables?
+    //can,pre,sbt,igv,tot
+    //¿cual seria la operacion? 
+    //sbt=pre*can;
+    //igv=sbt*0.18;
+    //tot=sbt+igv;
+
+    //definiendo variables
+    var can, pre, sbt, igv, tot;
+    //inicializando variables
+    can=0; pre=0; sbt=0; igv=0; tot=0;
+    //asignando valores
+    can=10;
+    pre=125.80;
+    //realizando operaciones
+    sbt=pre*can;
+    igv=sbt*0.18;
+    tot=sbt+igv;
+    //mostranso resultados
+    alert("El subtotal es: "+sbt);
+    alert("El igv es: "+igv);
+    alert("El total es: "+tot);
+    document.write("El subtotal es: "+sbt+"<br>");
+    document.write("El igv es: "+igv+"<br>");
+    document.write("El total es: "+tot+"<br>");
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
